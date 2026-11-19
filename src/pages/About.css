@@ -1,0 +1,519 @@
+/* ABOUT PAGE */
+
+.about-page {
+  overflow: hidden;
+  background: #fff;
+  color: #263b2e;
+}
+
+/* HERO */
+
+.about-hero {
+  min-height: 440px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 24px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(15, 37, 25, 0.72), rgba(15, 37, 25, 0.72)),
+    url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1800")
+      center/cover no-repeat;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #d9e9bd;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.about-hero h1 {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: #c5dca2;
+}
+
+.about-hero-content > p {
+  max-width: 590px;
+  margin: 22px auto 25px;
+  color: #e4e9e1;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #e2e9dc;
+  font-size: 14px;
+}
+
+.about-breadcrumb a {
+  color: #c5dca2;
+  text-decoration: none;
+}
+
+/* INTRODUCTION */
+
+.about-intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.about-intro-images {
+  position: relative;
+  padding: 0 25px 30px 0;
+}
+
+.about-main-image {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.about-image-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 20px 24px;
+  background: #f0f4e9;
+  color: #35583b;
+  border-radius: 5px;
+}
+
+.about-image-note strong,
+.about-image-note span {
+  display: block;
+}
+
+.about-image-note strong {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.about-image-note span {
+  font-size: 12px;
+  color: #6b7c6e;
+}
+
+.about-section-label {
+  display: inline-block;
+  color: #6a8b4e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+}
+
+.about-intro-content h2,
+.about-approach-content h2,
+.about-section-heading h2 {
+  color: #243b2c;
+  font-family: var(--heading-font);
+  font-size: clamp(30px, 3.5vw, 43px);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 22px;
+}
+
+.about-intro-content h2 span,
+.about-approach-content h2 span,
+.about-section-heading h2 span {
+  color: #78985b;
+}
+
+.about-intro-content > p,
+.about-approach-content > p {
+  color: #68736b;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-primary-btn,
+.about-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 23px;
+  margin-top: 16px;
+  background: #315b3b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-primary-btn:hover,
+.about-cta-btn:hover {
+  background: #203e29;
+  transform: translateY(-3px);
+}
+
+/* MISSION & VISION */
+
+.about-purpose {
+  padding-top: 95px;
+  padding-bottom: 100px;
+  background: #f6f7f1;
+}
+
+.about-section-heading {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+.about-section-heading > p {
+  color: #718075;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.about-purpose-card {
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e8ece3;
+  border-radius: 5px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-purpose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(30, 60, 38, 0.08);
+}
+
+.about-purpose-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: #edf3e7;
+  color: #537a43;
+}
+
+.about-purpose-card > span {
+  color: #78985b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.about-purpose-card h3 {
+  color: #2c4433;
+  font-family: var(--heading-font);
+  font-size: 24px;
+  margin: 14px 0;
+}
+
+.about-purpose-card p {
+  color: #718075;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* AYURVEDIC APPROACH */
+
+.about-approach {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.about-values-list {
+  display: grid;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+.about-value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-value-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  color: #66864f;
+  background: #eff4e9;
+  border-radius: 50%;
+}
+
+.about-value-item h4 {
+  color: #304737;
+  font-size: 16px;
+  margin: 2px 0 7px;
+}
+
+.about-value-item p {
+  color: #778279;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-approach-image {
+  position: relative;
+}
+
+.about-approach-image > img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.about-image-caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 20px;
+  color: #fff;
+  background: rgba(30, 57, 37, 0.88);
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+/* BOTTOM CTA */
+
+.about-bottom-cta {
+  padding: 75px 0;
+  background: #294a32;
+}
+
+.about-bottom-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.about-bottom-cta-content > div > span {
+  color: #c3d6a8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.about-bottom-cta h2 {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.25;
+  margin: 15px 0;
+}
+
+.about-bottom-cta p {
+  color: #d4dfd2;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-cta-btn {
+  flex-shrink: 0;
+  margin-top: 0;
+  background: #dce8c9;
+  color: #294a32;
+}
+
+.about-cta-btn:hover {
+  background: #fff;
+  color: #294a32;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .about-intro-grid,
+  .about-approach-grid {
+    gap: 40px;
+  }
+
+  .about-main-image {
+    height: 410px;
+  }
+
+  .about-approach-image > img {
+    height: 460px;
+  }
+
+  .about-purpose-card {
+    padding: 30px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 390px;
+    padding: 75px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 39px;
+  }
+
+  .about-hero-content > p {
+    font-size: 14px;
+  }
+
+  .about-intro,
+  .about-approach {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about-intro-grid,
+  .about-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-intro-images {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .about-main-image {
+    height: 380px;
+  }
+
+  .about-intro-content h2,
+  .about-approach-content h2,
+  .about-section-heading h2 {
+    font-size: 34px;
+  }
+
+  .about-purpose {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about-purpose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-approach-image > img {
+    height: 400px;
+  }
+
+  .about-bottom-cta {
+    padding: 60px 0;
+  }
+
+  .about-bottom-cta-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    min-height: 350px;
+  }
+
+  .about-hero h1 {
+    font-size: 33px;
+  }
+
+  .about-eyebrow {
+    font-size: 10px;
+  }
+
+  .about-main-image {
+    height: 300px;
+  }
+
+  .about-image-note {
+    padding: 14px;
+  }
+
+  .about-purpose-card {
+    padding: 25px;
+  }
+
+  .about-approach-image > img {
+    height: 320px;
+  }
+
+  .about-image-caption {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 13px;
+    font-size: 12px;
+  }
+
+  .about-cta-btn {
+    width: 100%;
+  }
+}

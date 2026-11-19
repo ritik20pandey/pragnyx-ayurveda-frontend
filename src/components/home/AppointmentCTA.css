@@ -1,0 +1,241 @@
+/* ==============================
+   APPOINTMENT CTA SECTION
+================================= */
+
+.appointment-cta-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px;
+  background: #203b2b;
+  isolation: isolate;
+}
+
+/* Decorative Background */
+
+.appointment-cta-section::before,
+.appointment-cta-section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.appointment-cta-section::before {
+  top: -180px;
+  left: -100px;
+}
+
+.appointment-cta-section::after {
+  right: -100px;
+  bottom: -200px;
+}
+
+/* Main Content */
+
+.appointment-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Icon */
+
+.appointment-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 25px;
+  border: 1px solid rgba(221, 234, 201, 0.35);
+  border-radius: 50%;
+  color: #dce9c9;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Label */
+
+.appointment-cta-label {
+  display: block;
+  margin-bottom: 18px;
+  color: #c6d6a9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+/* Heading */
+
+.appointment-cta-content h2 {
+  color: #ffffff;
+  font-family: var(--heading-font);
+  font-size: clamp(34px, 4.5vw, 52px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.appointment-cta-content h2 span {
+  display: block;
+  color: #c5d7a6;
+}
+
+/* Description */
+
+.appointment-cta-content > p {
+  max-width: 590px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Buttons */
+
+.appointment-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.appointment-cta-primary,
+.appointment-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Primary Button */
+
+.appointment-cta-primary {
+  color: #203b2b;
+  background: #dce9c9;
+  border: 1px solid #dce9c9;
+}
+
+.appointment-cta-primary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Secondary Button */
+
+.appointment-cta-secondary {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+}
+
+.appointment-cta-secondary:hover {
+  color: #203b2b;
+  background: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Supporting Text */
+
+.appointment-cta-note {
+  display: block;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  line-height: 1.7;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .appointment-cta-section {
+    padding: 80px 20px;
+  }
+
+  .appointment-cta-content h2 {
+    font-size: 40px;
+  }
+
+  .appointment-cta-content > p {
+    font-size: 14px;
+  }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 480px) {
+  .appointment-cta-section {
+    padding: 70px 18px;
+  }
+
+  .appointment-cta-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 22px;
+  }
+
+  .appointment-cta-label {
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .appointment-cta-content h2 {
+    font-size: 32px;
+  }
+
+  .appointment-cta-content > p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .appointment-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .appointment-cta-primary,
+  .appointment-cta-secondary {
+    width: 100%;
+    min-height: 52px;
+    font-size: 12px;
+  }
+
+  .appointment-cta-note {
+    font-size: 10px;
+    margin-top: 23px;
+  }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .appointment-cta-primary,
+  .appointment-cta-secondary {
+    transition: none;
+  }
+}

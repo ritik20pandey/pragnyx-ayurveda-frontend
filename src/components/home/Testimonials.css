@@ -1,0 +1,244 @@
+/* ==============================
+   TESTIMONIALS SECTION
+================================= */
+
+.testimonials-section {
+  background: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+/* Section Heading */
+
+.testimonials-heading {
+  max-width: 680px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.testimonials-subtitle {
+  display: inline-block;
+  color: #78945d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 17px;
+}
+
+.testimonials-heading h2 {
+  font-family: var(--heading-font);
+  color: #203b2b;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.testimonials-heading h2 span {
+  color: #78945d;
+}
+
+.testimonials-heading p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #747b70;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Testimonial Grid */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Testimonial Card */
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px;
+  min-width: 0;
+  min-height: 340px;
+  background: #f8f8f1;
+  border: 1px solid #e9ecdf;
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-7px);
+  border-color: #cbd8bd;
+  box-shadow: 0 15px 35px rgba(32, 59, 43, 0.08);
+}
+
+/* Quote */
+
+.testimonial-quote {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #dce6d1;
+  font-family: Georgia, serif;
+  font-size: 85px;
+  line-height: 1;
+}
+
+/* Stars */
+
+.testimonial-stars {
+  position: relative;
+  z-index: 1;
+  color: #c49b45;
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+
+/* Feedback */
+
+.testimonial-feedback {
+  position: relative;
+  z-index: 1;
+  color: #606c61;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+/* Author */
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-top: 20px;
+  border-top: 1px solid #e4e8dc;
+}
+
+.testimonial-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #e1ead8;
+  color: #45663f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.testimonial-author-info h3 {
+  color: #203b2b;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial-author-info span {
+  color: #879083;
+  font-size: 12px;
+}
+
+/* Bottom Message */
+
+.testimonials-bottom {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.testimonials-bottom p {
+  color: #788273;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+  .testimonials-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial-card:last-child {
+    grid-column: span 2;
+    min-height: auto;
+  }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 576px) {
+  .testimonials-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .testimonials-heading {
+    margin-bottom: 35px;
+    padding: 0 5px;
+  }
+
+  .testimonials-heading h2 {
+    font-size: 32px;
+  }
+
+  .testimonials-heading p {
+    font-size: 14px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testimonial-card {
+    min-height: 300px;
+    padding: 27px 22px;
+  }
+
+  .testimonial-card:last-child {
+    grid-column: auto;
+    min-height: 300px;
+  }
+
+  .testimonial-feedback {
+    font-size: 13px;
+  }
+
+  .testimonials-bottom {
+    margin-top: 28px;
+  }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-card {
+    transition: none;
+  }
+
+  .testimonial-card:hover {
+    transform: none;
+  }
+}
